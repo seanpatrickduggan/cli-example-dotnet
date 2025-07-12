@@ -13,6 +13,13 @@
 		<AssemblyInformationalVersion>1.2.3</AssemblyInformationalVersion>
 		<!-- Disable inclusion of the Git commit hash in AssemblyInformationalVersion -->
 		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+		<!--
+			Enable invariant globalization to omit satellite resource assemblies
+			(e.g., “de”, “fr”, “ja” folders) when you only need the default (en-US)
+			culture. This reduces deployment size and avoids shipping unused
+			localized resources.
+		-->
+		<InvariantGlobalization>true</InvariantGlobalization>
 	</PropertyGroup>
 
 	<ItemGroup>
