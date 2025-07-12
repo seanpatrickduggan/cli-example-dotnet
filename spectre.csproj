@@ -1,15 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!-- Simplifies the version shown by \-\-version -->
+		<Version>1.2.3</Version>
+		<!-- Optional: controls the “product version” shown -->
+		<AssemblyVersion>1.2.3.0</AssemblyVersion>
+		<!-- Optional: controls the informational version -->
+		<AssemblyInformationalVersion>1.2.3</AssemblyInformationalVersion>
+		<!-- Disable inclusion of the Git commit hash in AssemblyInformationalVersion -->
+		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Spectre.Console" Version="0.50.0" />
-    <PackageReference Include="System.CommandLine" Version="2.0.0-beta5.25306.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Spectre.Console" Version="0.50.0" />
+		<PackageReference Include="System.CommandLine" Version="2.0.0-beta5.25306.1" />
+	</ItemGroup>
 
 </Project>

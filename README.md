@@ -7,6 +7,10 @@ A simple CLI tool that demonstrates the System.CommandLine beta and the Spectre.
 
 * Example of parsing command line args with System.CommandLine
 * Example of nice visuals you can create with Spectre.Console
+* Example of various version settings in .csproj file 
+    * System.CommandLine provides a interface to these values
+    ```spectre.exe --version```
+    * .NET 8+ will append the git hash if not explicitly disabled
 
 ## Usage
 
